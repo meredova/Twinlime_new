@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../font/TT\ Ricordi\ Allegria\ Trial\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@import 'base/mixins';
+@import 'base/variables';
+
+* {
+    font-family: "Rubik", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+@import 'blocks/header';
+@import 'blocks/aside';
+@import 'blocks/home';
+@import 'blocks/news';
+@import 'blocks/industry';
+@import 'blocks/services';
+@import 'blocks/partners';
+@import 'blocks/contacts';

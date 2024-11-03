@@ -1,0 +1,33 @@
+.aside {
+    position: fixed;
+    left: 60px;
+    right: 60px;
+    bottom: 15px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 1000;
+    &__socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+    }
+    &__lang {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;  
+    }
+}
+.lang {
+    &_active {
+        color: #30DF8B;
+    }
+}
