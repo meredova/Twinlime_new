@@ -1,13 +1,20 @@
+@use 'base/mixins';
+@use 'base/variables';
+@use 'blocks/header';
+@use 'blocks/aside';
+@use 'blocks/home';
+@use 'blocks/news';
+@use 'blocks/industry';
+@use 'blocks/services';
+@use 'blocks/partners';
+@use 'blocks/contacts';
+
 @font-face {
     font-family: 'MyCustomFont';
     src: url('../font/TT\ Ricordi\ Allegria\ Trial\ Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
-
-@import 'base/mixins';
-@import 'base/variables';
 
 * {
     font-family: "Rubik", serif;
@@ -31,11 +38,3 @@ main {
     box-sizing: border-box;
 }
 
-@import 'blocks/header';
-@import 'blocks/aside';
-@import 'blocks/home';
-@import 'blocks/news';
-@import 'blocks/industry';
-@import 'blocks/services';
-@import 'blocks/partners';
-@import 'blocks/contacts';

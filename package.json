@@ -4,13 +4,13 @@
   "main": "index.js",
   "scripts": {
     "build": "sass src/sass/styles.scss dist/css/styles.min.css --style=compressed --source-map && terser src/js/main.js --compress --mangle --output dist/js/main.min.js"
-  },   
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "sass": "^1.80.6"
+    "sass": "^1.80.6",
+    "terser": "^5.36.0"
   }
 }
-
