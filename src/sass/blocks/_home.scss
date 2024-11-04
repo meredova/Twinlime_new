@@ -1,10 +1,11 @@
+@use '../base/variables' as *;
+
 .home {
     width: 100%;
     position: relative;
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(75px);
     border-radius: 20px;
-    margin-top: 80px;
     height: 900px;
     overflow: hidden;
     z-index: -1;
@@ -15,7 +16,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        color: #382C53;
+        color: $body_color;
     }
     &__header {
         margin: 0;
@@ -25,7 +26,7 @@
         line-height: 130%;
         text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.5);
         span {
-            color: #30DF8B;
+            color: $main-color;
         }
     }
     &__subheader {
@@ -41,17 +42,9 @@
     }
 }
 
-.spot_up {
-    top: 0;
-    left: 0;
-}
-
-.spot_down, .lime {
+.lime {
+    width: 50%;
     bottom: 0;
     right: 0;
-}
-
-.lime {
     z-index: 2;
-    right: -9%;
 }

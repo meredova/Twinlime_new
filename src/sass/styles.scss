@@ -1,24 +1,24 @@
 @use 'base/mixins';
-@use 'base/variables';
+@use 'base/variables' as *;
 @use 'blocks/header';
 @use 'blocks/aside';
 @use 'blocks/home';
-@use 'blocks/news';
 @use 'blocks/industry';
 @use 'blocks/services';
 @use 'blocks/partners';
 @use 'blocks/contacts';
+@use 'blocks/media';
 
 @font-face {
-    font-family: 'MyCustomFont';
-    src: url('../font/TT\ Ricordi\ Allegria\ Trial\ Regular.ttf') format('truetype');
+    font-family: 'Manrope';
+    src: url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
     font-weight: normal;
     font-style: normal;
 }
 
 
 * {
-    font-family: "Rubik", serif;
+    font-family: "Manrope", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -39,3 +39,22 @@ main {
     box-sizing: border-box;
 }
 
+.title {
+    margin-left: 100px;
+    color: $main-color;
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 130%;
+    text-transform: capitalize;
+}
+
+@media (max-width: 1200px) {
+    .title {
+        margin-left: 0;
+    }
+}
+@media (max-width: 768px) {
+    .title {
+        font-size: 60px;
+    }
+}

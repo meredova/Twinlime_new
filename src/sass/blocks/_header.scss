@@ -1,3 +1,5 @@
+@use '../base/variables' as *;
+
 .header {
     width: 100%;
     position: fixed;
@@ -21,7 +23,7 @@
 .nav {
     display: flex;
     align-items: center;
-    width: 40%;
+    width: 40vw;
     &__list {
         width: 100%;
         display: flex;
@@ -31,12 +33,12 @@
         font-size: 18px;
         line-height: 21px;
         padding: 0;
-        color: #382C53;
+        color: $body_color;
     }  
     &__item {
         text-decoration: none;
         &:hover {
-            color: #30DF8B;
+            color: $hover_color;
         }
         a {
             display: block;
@@ -44,5 +46,25 @@
             color: inherit;
             text-decoration: none;
         }
+    }
+}
+.burger {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    height: 21px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+    span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #151812;
+    }
+    span.long {
+        width: 36px;
     }
 }

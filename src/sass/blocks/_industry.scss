@@ -1,16 +1,10 @@
+@use '../base/variables' as *;
+
 .industry {
     margin-top: 50px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    &__title {
-        margin-left: 100px;
-        color: #30DF8B;
-        font-weight: 500;
-        font-size: 96px;
-        line-height: 130%;
-        text-transform: capitalize;
-    }
     &__wrapper {
         gap: 100px;
         margin: 16px 100px;
@@ -24,6 +18,7 @@
         justify-content: space-between;
         img {
             width: 48%;
+            border-radius: 10px
         }
     }
 }
@@ -39,7 +34,7 @@
             width: 284px;
             height: 53px;
             border-radius: 10px;
-            background: #382C53;
+            background: $body_color;
             border: none;
             display: flex;
             justify-content: center;
@@ -54,7 +49,7 @@
         font-weight: 500;
         font-size: 42px;
         line-height: 130%;
-        color: #382C53;
+        color: $body_color;
     }
     &__list {
         margin-top: 0;
@@ -66,7 +61,7 @@
         font-weight: 400;
         font-size: 22px;
         line-height: 130%;
-        color: #382C53;
+        color: $body_color;
         &::before {
             content: '';
             position: absolute;
@@ -75,7 +70,7 @@
             width: 14px;
             height: 14px;
             border-radius: 50%;
-            background: #30DF8B;
+            background: $main_color;
         }
     }
 }
